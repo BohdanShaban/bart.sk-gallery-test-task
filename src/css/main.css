@@ -1,0 +1,153 @@
+/* Specification */
+
+    /* border: 0.5px solid red; */
+    /* border: 1px solid blue; */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+.main_section {
+    min-height: 1420px;
+    position: relative;
+
+    /* background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/pexels-photo-261187.jpeg') 50%/cover no-repeat;
+    background-size: 100% 30%;
+    filter: blur(10px);
+    -webkit-filter: blur(10px); */
+}
+
+.container {
+    /* position: absolute;
+    top: 99px; 
+    left: 231px; */
+}
+
+.galery_wrapper {
+    /* position: absolute;
+    top: 20%; */
+    /* left: 20%; */
+    /* left: 231px; */
+    /* z-index: -5; */
+
+    
+}
+
+.backgr_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    height: 338px;
+    width: 100%;
+
+    
+}
+
+/* background: url('../img/pexels-photo-261187.jpeg') 50%/cover no-repeat; */
+/* background: url('../img/pexels-photo-261187.jpeg') top center/cover no-repeat; */
+.background {
+
+    position: relative; 
+
+    height: 338px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* You could use :after - it doesn't really matter */
+.background::before {    
+    content: "";
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../img/pexels-photo-261187.jpeg') 50%/cover no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+} 
+/* opacity: 0.6;  */
+
+
+h1 {
+    /* position: relative;
+    z-index: 2; */
+
+    /* margin: 0 973px 43px 0; */
+    margin-top: 99px;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.2px;
+    text-align: left;
+    /* color: #ffffff; */
+    color: black;
+    text-transform: uppercase;
+}
+h2.sub_header {
+    margin: 43px 1050px 14px 1px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.94;
+    letter-spacing: 0.8px;
+    text-align: left;
+    /* color: #ffffff; */
+    color: black;
+    text-transform: uppercase;
+
+    
+}
+/* .line {
+    width: 1140px;
+    height: 2px;
+    margin: 14px 0 33px 1px;
+    opacity: 0.2;
+    background-color: #eeeeee;
+    background-color: black;
+  } */
+
+.category {
+    margin-bottom: 30px;
+    width: 263px;
+}
+
+.categ_img {
+    height: 157px;
+}
+.categ_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+}
+.categ_title {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #555555;
+    text-transform: uppercase;
+
+    padding: 21px 0;
+
+}
