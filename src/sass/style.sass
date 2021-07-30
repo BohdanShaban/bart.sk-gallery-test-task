@@ -76,12 +76,33 @@ h2.sub_header
 .category_item
     margin-bottom: 30px
     transition: transform .2s linear
+    height: 215px
+    text-align: center
+
+    // box-shadow: 0 0 4px fade(#000, 25%)
+    // transition: box-shadow .2s linear
 
     &:hover
         transform: translateY(-10px)
+        //box-shadow: 0 0 25px fade(#000, 25%)
+
+    &__add_categ
+        padding-top: 71px
+        padding-bottom: 71px
+
+        transition: transform .2s linear
+        &:hover
+            transform: translateY(-10px)
+        
 
 .categ_img
     height: 157px
+
+    &__add_categ
+        display: block
+        width: 40px
+        height: 40px
+        margin: 0 auto
 
     img
         width: 100%
@@ -97,7 +118,17 @@ h2.sub_header
     font-stretch: normal
     font-style: normal
     letter-spacing: 0.8px
-    text-align: center
     color: #555555
     text-transform: uppercase
     padding: 21px 0
+
+    &__add_categ
+        margin: 16px 0 0
+        font-size: 16px
+        font-weight: bold
+        font-stretch: normal
+        font-style: normal
+        letter-spacing: 0.8px
+        text-transform: uppercase
+        color: #aaaaaa
+        text-align: center
