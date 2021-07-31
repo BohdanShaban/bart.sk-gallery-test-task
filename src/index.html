@@ -113,6 +113,78 @@
     
 </section>
 
+
+<!-- MODAL WINDOW: Add Category -->
+<div class="modal__mask popup__add_categ" style="display: none;">
+    <div class="modal__dialog">
+
+        <div class="modals_close_btn_wrapper">
+            <button type="button" data-close>
+                <img src="icons/close.png" alt="Close">
+                <div class="btn_text">ZAVRIET</div>
+            </button>
+        </div>
+
+        <div class="modal_content">
+
+            <h2 class="modal_content__header">Pridat kategoriu</h2>
+
+            <div class="add_category_wrapper">
+                <input class="input_categ_add" name="input-categ" type="text" id="categ_add" placeholder="Zadajte nazov kategorie">
+
+                <button class="modal_add_btn" type="button" data-add>
+                    <img src="icons/add.png" alt="Add">
+                    <div class="btn_text">PRIDAT</div>
+                </button>
+
+            </div>
+            
+        </div> <!-- modal__contact -->
+
+    </div> <!-- modal__dialog -->
+</div> <!-- modal__mask -->
+
+
+<!-- MODAL WINDOW: Add Photo -->
+<div class="modal__mask popup__add_photo" style="display: flex;">
+    <div class="modal__dialog">
+
+        <div class="modals_close_btn_wrapper">
+            <button type="button" data-close>
+                <img src="icons/close.png" alt="Close">
+                <div class="btn_text">ZAVRIET</div>
+            </button>
+        </div>
+
+        <div class="modal_content">
+
+            <h2 class="modal_content__header">Pridat fotku</h2>
+
+            <div class="photo_drag_and_drop">
+
+                <a class="categ_img__add_categ" href="#">
+                    <img src="./icons/add_photo.png" alt="img">
+                </a>
+                <div class="categ_title__add_categ">sem presunte fotky</div>
+                <div class="grop_or">alebo</div>
+                <button class="btn_choose_files" type="button" data-add>
+                    <div class="categ_title__add_categ">VYBERTE SUBORY</div>
+                </button>
+
+            </div>
+
+            <div class="add_photo_wrapper">
+                <button class="modal_add_btn" type="button" data-add>
+                    <img src="icons/add.png" alt="Add">
+                    <div class="btn_text">PRIDAT</div>
+                </button>
+            </div>
+            
+        </div> <!-- modal__contact -->
+
+    </div> <!-- modal__dialog -->
+</div> <!-- modal__mask -->
+
     
 </body>
 </html>
