@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/main.min.css">
 
@@ -29,8 +30,8 @@
     <div class="container">
 
         <div class="backgr_wrapper">
-            <!--  BLURED_TOP_BG  -->
-            <div class="background"> </div>
+            <!--  BLURED_TOP_BG  <div class="background" > </div>  -->
+            <img src="./img/pexels-photo-261187.jpeg" alt="backgr_img" class="backgr_img">
             <!--  BLURED_TOP_BG  -->
         </div>
     
@@ -47,58 +48,59 @@
                     
                     <!--  CARDS  -->
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="category_item">
-                            <div class="categ_img">
+                        <div class="card_item" id="card_1" >
+                            <div class="card_img"  style="height: 157px;" > <!-- class="card_img"  style="height: 157px;"  -->
                                 <img src="./img/landscape-meadow-field-mountains-66874.jpeg" alt="img">
                             </div>
-                            <div class="categ_title">priroda</div>
+                            <div class="card_title">priroda</div>
                         </div>
                     </div>
     
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="category_item">
-                            <div class="categ_img">
+                        <div class="card_item" id="card_2" >
+                            <div class="card_img"  style="height: 157px;" >
                                 <img src="./img/pexels-photo-261187.jpeg" alt="img">
                             </div>
-                            <div class="categ_title">architektura</div>
+                            <div class="card_title">architektura</div>
                         </div>
                     </div>
     
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="category_item">
-                            <div class="categ_img">
+                        <div class="card_item" id="card_id" >
+                            <div class="card_img"  style="height: 157px;" >
                                 <img src="./img/pexels-photo-27411.jpg" alt="img">
                             </div>
-                            <div class="categ_title">ludia</div>
+                            <div class="card_title">ludia</div>
                         </div>
                     </div>
     
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="category_item">
-                            <div class="categ_img">
+                        <div class="card_item" id="card_id" >
+                            <div class="card_img"  style="height: 157px;">
                                 <img src="./img/food-salad-healthy-lunch.jpg" alt="img">
                             </div>
-                            <div class="categ_title">jedlo</div>
+                            <div class="card_title">jedlo</div>
                         </div>
                     </div>
-    
+
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="category_item">
-                            <div class="categ_img">
+                        <div class="card_item">
+
+                            <div class="card_img"  style="height: 157px;" >
                                 <img src="./img/pexels-photo-210019.jpeg" alt="img">
                             </div>
-                            <div class="categ_title">auto</div>
+                            <div class="card_title">auto</div>
                         </div>
                     </div>
 
                     <!-- ADD NEW CATEGORY  CARD  -->
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="category_item__add_categ">
+                        <div class="card_item__add_card">
 
-                            <a class="categ_img__add_categ" href="#">
+                            <a class="card_img__add_card" href="#">
                                 <img src="./icons/add_category.png" alt="img">
                             </a>
-                            <div class="categ_title__add_categ">pridat kategoriu</div>
+                            <div class="card_title__add_card">pridat kategoriu</div>
 
                         </div>
                     </div>
@@ -113,12 +115,12 @@
 
 <!------------      CATEGORY SECTION      ------------>
 
-<section class="section" style="display: none;" >  <!--  style="display: none;"  -->
+<section class="section" style="display: block" >  <!--  style="display: none;"  -->
     <div class="container">
 
         <div class="backgr_wrapper">
-            <!--  BLURED_TOP_BG  -->
-            <div class="background"> </div>
+            <!--  BLURED_TOP_BG  <div class="background" > </div>  -->
+            <img src="./img/pexels-photo-261187.jpeg" alt="backgr_img" class="backgr_img">
             <!--  BLURED_TOP_BG  -->
         </div>
     
@@ -129,74 +131,77 @@
                     <!--  HEADER & SUB-HEADER & DIVIDER  -->
                     <div class="col-md-12">
                         <h1>Fotogaleria</h1>
-                        <h2 class="sub_header">architektura</h2>
+                        <div class="sub_header_wrapper" style="display: flex; align-items: center">
+                            <a href='#' class='back_btn__link'>  <img src='./icons/left_arrow.svg' alt="arrow"/>  </a>
+                            <h2 class="sub_header">architektura</h2>
+                        </div>
                         <div class="sub_header_divider"></div>
                     </div>
                     
                     <!--  CARDS  -->
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="photo_item">
-                            <div class="photo_img">
+                        <div class="card_item">
+                            <div class="card_img">
                                 <img src="./img/pexels-photo-261187.jpeg" alt="img">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="photo_item">
-                            <div class="photo_img">
+                        <div class="card_item">
+                            <div class="card_img">
                                 <img src="./img/pexels-photo-261146.jpeg" alt="img">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="photo_item">
-                            <div class="photo_img">
+                        <div class="card_item">
+                            <div class="card_img">
                                 <img src="./img/pexels-photo-24464.jpg" alt="img">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="photo_item">
-                            <div class="photo_img">
+                        <div class="card_item">
+                            <div class="card_img">
                                 <img src="./img/pexels-photo-323780.jpeg" alt="img">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="photo_item">
-                            <div class="photo_img">
+                        <div class="card_item">
+                            <div class="card_img">
                                 <img src="./img/pexels-photo-221506.jpeg" alt="img">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="photo_item">
-                            <div class="photo_img">
+                        <div class="card_item">
+                            <div class="card_img">
                                 <img src="./img/pexels-photo-186077.jpeg" alt="img">
                             </div>
                         </div>
                     </div>
-    
+
 
                     <!-- ADD NEW PHOTO  CARD  -->
                     <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="category_item__add_categ">
+                        <div class="card_item__add_card">
 
-                            <a class="categ_img__add_categ" href="#">
+                            <a class="card_img__add_card" href="#">
                                 <img src="./icons/add_photo.png" alt="img">
                             </a>
-                            <div class="categ_title__add_categ">pridat fotky</div>
+                            <div class="card_title__add_card">pridat fotky</div>
 
                         </div>
                     </div>
-    
-                </div> <!--  row  -->
-            </div> <!--  container  -->
+                    
+                </div> <!-- row  -->
+            </div> <!--  contain  -->
         </div> <!--  galery_wrapper  -->
 
     </div> <!--  .container  -->
@@ -206,11 +211,11 @@
 <!------------      MODALS      ------------>
 
 <!--  ADD CATEGORY MODAL  -->
-<div class="modal__mask popup__add_categ" style="display: none;"> <!--  !!! display: flex  -->
+<div class="modal__mask popup__add_categ" style="display: flex;"> <!--  !!! display: flex  -->
     <div class="modal__dialog">
 
         <div class="close_btn_wrapper">
-            <button type="button" data-close>
+            <button class="close_btn" type="button" data-close>
                 <img src="icons/close.png" alt="Close">
                 <div class="btn_text">ZAVRIET</div>
             </button>
@@ -237,11 +242,11 @@
 
 
 <!--  ADD PHOTO MODAL  -->
-<div class="modal__mask popup__add_photo" style="display: flex">
+<div class="modal__mask popup__add_photo" style="display: none"> <!--  !!! display: flex  -->
     <div class="modal__dialog">
 
         <div class="close_btn_wrapper">
-            <button type="button" data-close>
+            <button class="close_btn" type="button" data-close>
                 <img src="icons/close.png" alt="Close">
                 <div class="btn_text">ZAVRIET</div>
             </button>
@@ -253,13 +258,13 @@
 
             <div class="photo_drag_and_drop">
 
-                <a class="categ_img__add_categ" href="#">
+                <a class="card_img__add_card" href="#">
                     <img src="./icons/add_photo.png" alt="img">
                 </a>
-                <div class="categ_title__add_categ">sem presunte fotky</div>
+                <div class="card_title__add_card">sem presunte fotky</div>
                 <div class="grop_or">alebo</div>
                 <button class="btn_choose_files" type="button" data-add>
-                    <div class="categ_title__add_categ">VYBERTE SUBORY</div>
+                    <div class="card_title__add_card">VYBERTE SUBORY</div>
                 </button>
 
             </div>
@@ -272,6 +277,45 @@
             </div>
             
         </div> <!-- modal_content -->
+
+    </div> <!-- modal__dialog -->
+</div> <!-- modal__mask -->
+
+
+<!--  SHOW IMAGE MODAL  -->
+<div class="modal__mask popup__show_image" style="display: none;"> <!--  !!! display: flex  -->
+    <div class="modal__dialog">
+
+        <div class="modal_image_content">
+
+
+            <div class="backside_transparent_wrapper">
+                <button type="button" data-prev>
+                    <img src="icons/left-arrow.png" alt="Close">
+                </button>
+            </div>
+
+            <div class="modal_image">
+
+                <div class="close_btn_wrapper">
+                    <button class="close_btn" type="button" data-close>
+                        <img src="icons/close.png" alt="Close">
+                        <div class="btn_text">ZAVRIET</div>
+                    </button>
+                </div>
+
+                <img class="modal_image_img" src="img/pexels-photo-261146.jpeg" alt="modal_image">
+            </div>
+
+            <div class="backside_transparent_wrapper">
+                <button type="button" data-next>
+                    <img src="icons/right-arrow.png" alt="Close">
+                </button>
+            </div>
+
+        </div>
+
+        
 
     </div> <!-- modal__dialog -->
 </div> <!-- modal__mask -->
